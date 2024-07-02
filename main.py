@@ -1,10 +1,8 @@
 
 def splitlist(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    minval = numbers[0] # Assume that first element is the minimum
+    minindex = 0
+
 
 
 def main():
