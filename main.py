@@ -7,7 +7,10 @@ def splitlist(numbers):
             # Update minval and minindex
             minval = numbers[i]
             minindex = i
-
+    # Swap minval with the first element
+    numbers[0], numbers[minindex] = numbers[minindex], numbers[0]
+    # Return minval and the rest of the elements
+    return minval, numbers[1:]
 
 
 def main():
