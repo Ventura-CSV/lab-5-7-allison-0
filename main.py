@@ -1,6 +1,6 @@
 
 def splitlist(*args):
-    numbers = list(args)
+    numbers = list(*args)
     minval = numbers[0] # Assume that first element is the minimum
     minindex = 0
     for i in range(1, len(numbers)):
@@ -18,7 +18,7 @@ def main():
 
     numbers = [5, 4, 3, 2, 1]
 
-    first, others = splitlist(*numbers)
+    first, others = splitlist(numbers)
     print(first)  # Expected output     1
     print(others)  # Expected output     4 3 2 5
 
